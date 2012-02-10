@@ -1,0 +1,13 @@
+D:\Shxundra\work\Weather\Weather\bin\Release\Weather.exe.config
+D:\Shxundra\work\Weather\Weather\bin\Release\Weather.exe
+D:\Shxundra\work\Weather\Weather\bin\Release\Weather.pdb
+D:\Shxundra\work\Weather\Weather\obj\Release\ResolveAssemblyReference.cache
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.about.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.Form1.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.Properties.Resources.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.Resource1.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.WeatherInfoByLocationView.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.WeatherInfoView.resources
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.csproj.GenerateResource.Cache
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.exe
+D:\Shxundra\work\Weather\Weather\obj\Release\Weather.pdb
