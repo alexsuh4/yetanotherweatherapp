@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Weather" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="WeatherUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.ims.gov.il/ims/PublicXML/isr_cities.xml</Value>
+    </Setting>
+    <Setting Name="WeatherOfflineFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">isr_cities.xml</Value>
+    </Setting>
+    <Setting Name="PollFrequencyHours" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="WeatherXmlEncoding" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISO-8859-8</Value>
+    </Setting>
+    <Setting Name="DefaultCity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">באר שבע</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

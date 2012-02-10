@@ -1,0 +1,24 @@
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\bin\Debug\Weather.exe
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\bin\Debug\Weather.pdb
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.Properties.Resources.resources
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.Resource1.resources
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.exe
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.pdb
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.Form1.resources
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.WeatherInfoView.resources
+C:\Documents and Settings\we2.MAMA\Local Settings\Application Data\Temporary Projects\Weather\obj\Debug\Weather.WeatherInfoByLocationView.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.exe
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.pdb
+D:\Shxundra\work\Weather\Weather\bin\Debug\Weather.exe
+D:\Shxundra\work\Weather\Weather\bin\Debug\Weather.pdb
+D:\Shxundra\work\Weather\Weather\obj\Debug\ResolveAssemblyReference.cache
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.Form1.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.Properties.Resources.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.Resource1.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.WeatherInfoByLocationView.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.WeatherInfoView.resources
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
+D:\Shxundra\work\Weather\Weather\bin\Debug\Weather.exe.config
+D:\Shxundra\work\Weather\Weather\obj\Debug\Weather.about.resources
