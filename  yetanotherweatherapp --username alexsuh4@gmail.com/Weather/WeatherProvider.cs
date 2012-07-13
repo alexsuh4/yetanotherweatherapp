@@ -175,6 +175,9 @@ namespace Weather
         public string WeatherCode { get; set; }
         public string WindDirection { get; set; }
         public string WindSpeed { get; set; }
+        public float WindSpeedAvg { get; set; }
+        public float WindSpeedMax { get; set; }
+        public float WindSpeedMin { get; set; }
         public WeatherBindingSource()
         {
 
@@ -191,6 +194,10 @@ namespace Weather
                 string[] dirAndSpeed = createFrom.Elements["Wind direction and speed"].Split('/');
                 WindDirection = dirAndSpeed[0];
                 WindSpeed = dirAndSpeed[1];
+                string []WindSpeeds = WindSpeed.Split('-');
+                WindSpeedMin = float.Parse(WindSpeeds[0]);
+                WindSpeedMax = float.Parse(WindSpeeds[1]);
+                WindSpeedAvg = (WindSpeedMax + WindSpeedMin) / 2;
             }
             catch (Exception) { }
 
