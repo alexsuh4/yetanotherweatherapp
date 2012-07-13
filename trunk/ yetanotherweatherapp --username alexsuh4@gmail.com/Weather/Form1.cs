@@ -10,15 +10,17 @@ using System.Reflection;
 
 namespace Weather
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, IWaitView
     {
         public Form1()
         {
             InitializeComponent();
 
             SetTitle();
-        }
+            waiter = new WinformsWaiter(this);
 
+        }
+        WinformsWaiter waiter;
         private void SetTitle()
         {
            this.Text= Utils.GetAssemblyAttribute<AssemblyTitleAttribute>(Assembly.GetExecutingAssembly()).Title;
@@ -26,11 +28,9 @@ namespace Weather
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WeatherProvider provider = new WeatherProvider();
-            provider.Retrieve();
-            provider.Parse();
-
-            weatherInfoByLocationView1.InfoView = provider.weatherInfo;
+            waiter.start();
+            weatherInfoByLocationView1.Visible = false;
+            backgroundWorker1.RunWorkerAsync();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,5 +62,52 @@ namespace Weather
         {
             this.Dispose();
         }
+
+        #region IWaitView Members
+
+       
+
+        public Label ProgressLabel()
+        {
+            return lwait;
+        }
+
+       
+
+        public Control ContainingPanel()
+        {
+            return panelwait;
+        }
+
+        
+        #endregion
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+            WeatherProvider provider = new WeatherProvider();
+            provider.Retrieve();
+            provider.Parse();
+            e.Result = provider;
+            e.Result = provider.weatherInfo;
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            try
+            {
+                if (e.Error != null)
+                { MessageBox.Show("Error !" + e.Error); return; }
+                if (e.Cancelled || e.Result == null || !(e.Result is WeatherInfo)) return;
+                weatherInfoByLocationView1.InfoView = (WeatherInfo)e.Result;
+            }
+            finally
+            {
+                waiter.stop();
+                weatherInfoByLocationView1.Visible = true;
+            }
+        }
+
+        
     }
 }

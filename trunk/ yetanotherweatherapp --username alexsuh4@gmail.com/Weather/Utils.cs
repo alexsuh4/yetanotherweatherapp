@@ -10,7 +10,7 @@ namespace Weather
 {
     public class Utils
     {
-
+        public static Random Rand = new Random(DateTime.Now.Millisecond);
         public static string GetFromWeb(string uri,string where)
         {
             if (File.Exists(where))
