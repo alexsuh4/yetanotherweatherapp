@@ -14,7 +14,7 @@ namespace Weather
         public WeatherInfoView()
         {
             InitializeComponent();
-           
+            //cloudLocation = new Point(Utils.Rand.Next(this.Width), Utils.Rand.Next(this.Height));
             
         }
         private LocationInfo currentInfo;
@@ -28,7 +28,8 @@ namespace Weather
                 if (value.LocationData != null && value.LocationData.Count > 0)
                 {
                     WeatherBindingSource ds = new WeatherBindingSource(value.LocationData[0]);
-                    bindingSource1.DataSource = ds; 
+                    bindingSource1.DataSource = ds;
+                    this.compassGauge1.Invalidate();
                 }
                 currentInfo = value;
                 timer1.Start();
@@ -37,10 +38,19 @@ namespace Weather
         
         private void timer1_Tick(object sender, EventArgs e)
         {
-            cloud.Location = new Point(cloud.Location.X + 3, cloud.Location.Y);
-            if (cloud.Location.X > this.TopLevelControl.Width)
-                cloud.Location = new Point(0, Utils.Rand.Next(this.TopLevelControl.Height) );
+            //cloudLocation = new Point(cloudLocation.X + 3, cloudLocation.Y);
+            //if (cloudLocation.X > this.TopLevelControl.Width)
+            //    cloudLocation = new Point(0, Utils.Rand.Next(this.TopLevelControl.Height) );
+            this.Invalidate();
+            
         }
 
+        //Point cloudLocation;
+        //protected override void OnPaint(PaintEventArgs e)
+        //{
+        //    base.OnPaint(e);
+        //    e.Graphics.DrawImage(Resource1.cloud_icon_5, cloudLocation);
+            
+        //}
     }
 }

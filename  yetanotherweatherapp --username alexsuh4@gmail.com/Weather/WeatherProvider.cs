@@ -178,6 +178,15 @@ namespace Weather
         public float WindSpeedAvg { get; set; }
         public float WindSpeedMax { get; set; }
         public float WindSpeedMin { get; set; }
+        public string WindSpeedMinAstext { get; set; }
+        public string WindSpeedMaxAstext { get; set; }
+        public string WindSpeedAvgAsText { get; set; }
+        public string WindDirectionAstext { get; set; }
+        public string WindSpeedAstext { get; set; }
+        public float WindAvgDirection { get; set; }
+        public float windDirMin { get; set; }
+        public float windDirMax { get; set; }
+
         public WeatherBindingSource()
         {
 
@@ -187,9 +196,9 @@ namespace Weather
             try
             {
                 MaximumRelativeHumidity = createFrom.Elements["Maximum relative humidity"];
-                MaximumTemperature = createFrom.Elements["Maximum temperature"];
+                MaximumTemperature = createFrom.Elements["Maximum temperature"]+"°";
                 MinimumRelativeHumidity = createFrom.Elements["Minimum relative humidity"];
-                MinimumTemperature = createFrom.Elements["Minimum temperature"];
+                MinimumTemperature = createFrom.Elements["Minimum temperature"]+"°";
                 WeatherCode = createFrom.Elements["Weather code"];
                 string[] dirAndSpeed = createFrom.Elements["Wind direction and speed"].Split('/');
                 WindDirection = dirAndSpeed[0];
@@ -198,6 +207,18 @@ namespace Weather
                 WindSpeedMin = float.Parse(WindSpeeds[0]);
                 WindSpeedMax = float.Parse(WindSpeeds[1]);
                 WindSpeedAvg = (WindSpeedMax + WindSpeedMin) / 2;
+
+                WindSpeedMinAstext = WindSpeedMin + "km/h";
+                WindSpeedMaxAstext = WindSpeedMax + "km/h";
+                WindSpeedAvgAsText = WindSpeedAvg + "km/h";
+                WindDirectionAstext = WindDirection + "°";
+                WindSpeedAstext = WindSpeedMinAstext + "-" + WindSpeedMaxAstext;
+
+                string[] windDirections = WindDirection.Split('-');
+                 windDirMin = float.Parse(windDirections[0]);
+                 windDirMax = windDirections.Length > 1 ? float.Parse(windDirections[1]) : windDirMin;
+                WindAvgDirection = (windDirMin + windDirMax) / 2;
+
             }
             catch (Exception) { }
 
