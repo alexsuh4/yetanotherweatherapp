@@ -52,7 +52,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(457, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(343, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,6 +89,7 @@
             this.picwait.Location = new System.Drawing.Point(3, 3);
             this.picwait.Name = "picwait";
             this.picwait.Size = new System.Drawing.Size(124, 122);
+            this.picwait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picwait.TabIndex = 0;
             this.picwait.TabStop = false;
             // 
@@ -107,7 +108,7 @@
             this.panelwait.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.panelwait.Controls.Add(this.lwait, 0, 1);
             this.panelwait.Controls.Add(this.picwait, 0, 0);
-            this.panelwait.Location = new System.Drawing.Point(145, 129);
+            this.panelwait.Location = new System.Drawing.Point(98, 189);
             this.panelwait.Name = "panelwait";
             this.panelwait.RowCount = 2;
             this.panelwait.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 128F));
@@ -121,7 +122,7 @@
             this.weatherInfoByLocationView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.weatherInfoByLocationView1.Location = new System.Drawing.Point(0, 24);
             this.weatherInfoByLocationView1.Name = "weatherInfoByLocationView1";
-            this.weatherInfoByLocationView1.Size = new System.Drawing.Size(457, 393);
+            this.weatherInfoByLocationView1.Size = new System.Drawing.Size(343, 451);
             this.weatherInfoByLocationView1.TabIndex = 0;
             this.weatherInfoByLocationView1.Visible = false;
             // 
@@ -129,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 417);
+            this.ClientSize = new System.Drawing.Size(343, 475);
             this.Controls.Add(this.panelwait);
             this.Controls.Add(this.weatherInfoByLocationView1);
             this.Controls.Add(this.menuStrip1);
